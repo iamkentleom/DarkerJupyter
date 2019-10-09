@@ -2,11 +2,11 @@ var s = document.createElement("style")
 s.type = "text/css"
 s.innerHTML = 
 `
-::selection{
-    background: red !important;
+::selection, .CodeMirror-selected{
+    background: #49483e !important;
 }
-input{
-    caret-color: #eeeeee !important;
+.CodeMirror-cursor {
+	border-left: 2px solid white;
 }
 #header{
     background-color: #383838 !important;
@@ -111,6 +111,20 @@ ul.typeahead-list > li > a{
 a[data-group="jupyter-notebook"]:hover{
     background-color: #1e1e1e !important;
     color: #cccccc !important;
+}
+
+.dropdown-menu{
+    background-color: #2b2b2b !important;
+    color: #eeeeee !important;
+}
+.dropdown-menu > li > a{
+    color: #eeeeee !important;
+}
+.dropdown-submenu > a::after {
+	color: #eeeeee !important;
+}
+.dropdown-menu > li > a:hover{
+    background-color: #1e1e1e !important;
 }
 `
 
