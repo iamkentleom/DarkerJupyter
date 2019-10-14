@@ -39,6 +39,12 @@ s.innerHTML =
 .CodeMirror{
     color: white !important;
 }
+.CodeMirror-gutter, .CodeMirror-linenumbers {
+	background-color: #2a2a2a;
+}
+div.cell.selected, div.cell.selected.jupyter-soft-selected {
+	border-color: #42a5f5;
+}
 #notebook{
     background-color: #2b2b2b;
 }
@@ -90,8 +96,13 @@ code{
     color: #afafae !important;
 }
 
-.modal-body{
+.modal-body, .modal-header, .modal-footer{
     background-color: #383838 !important;
+    color: #eee;
+}
+.form-control{
+    background-color: #1e1e1e;
+    color: #eee;
 }
 input[type="search"]{
     background-color: #1e1e1e !important;
