@@ -20,7 +20,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["http://*/notebooks/*"],
+      "matches": ["http://*/notebooks/*", "https://hub.gke.mybinder.org/*"],
       "js": ["dark.js"]
     }
   ]
