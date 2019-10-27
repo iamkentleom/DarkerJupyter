@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="images/icon128.png">
+</p>
+
 # DarkerJupyter
 > Dark Mode for Jupyter Notebooks
 
