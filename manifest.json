@@ -21,7 +21,7 @@
   "content_scripts": [
     {
       "matches": ["http://*/notebooks/*", "https://hub.gke.mybinder.org/*"],
-      "js": ["dark.js"]
+      "css": ["dark.css"]
     }
   ]
 }
