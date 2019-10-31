@@ -67,7 +67,7 @@ span.save_widget span.filename:hover {
     background-color: var(--secondary-bg) !important;
 }
 .btn, #cell_type{
-    background-color: var(--primary-bg)--primary-bg !important;
+    background-color: var(--primary-bg) !important;
     border: var(--border);
     color: var(--primary-color) !important;
 }
