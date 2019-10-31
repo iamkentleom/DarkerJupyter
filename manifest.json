@@ -15,7 +15,7 @@
       "24": "images/icon16.png",
       "32": "images/icon16.png"
     },
-    "default_title": "Dark Notebook",
+    "default_title": "Darker Jupyter",
     "default_popup": "popup.html"
   },
   "content_scripts": [
