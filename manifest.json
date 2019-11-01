@@ -8,7 +8,10 @@
             "48": "images/icon48.png",
             "128": "images/icon128.png" },
   "offline_enabled": true,
-  "permissions": ["tabs", "http://*/notebooks/*", "https://hub.gke.mybinder.org/*"],
+  "permissions": ["tabs", "http://*/notebooks/*", "https://hub.gke.mybinder.org/*", "storage"],
+  "background":{
+    "scripts": ["storage-clear.js"]
+  },
   "browser_action": {
     "default_icon": {
       "16": "images/icon16.png",

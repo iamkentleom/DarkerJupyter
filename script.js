@@ -1,24 +1,34 @@
-chrome.tabs.query({active: true, url:["http://*/notebooks/*", "https://hub.gke.mybinder.org/*"]}, tab => {
+browser.tabs.query({active: true, url:["http://*/notebooks/*", "https://hub.gke.mybinder.org/*"]}, tab => {
     if(tab[0] !== undefined){
+        let id = tab[0].id
+
+        let btn = document.getElementById('toggle')
         let txt = document.getElementById('detect')
         let box = document.getElementById('box')
+
         box.style.display = 'inline-block'
         txt.style.display = 'none'
 
-        let btn = document.getElementById('toggle')
-        btn.addEventListener('click', changeColor)
+        browser.storage.local.get()
+        .then(ans => {
+            btn.checked = ans[id] === undefined ? true : ans[id]
+        })
         
+        btn.addEventListener('click', changeColor)
+
         function changeColor(){
             if(btn.checked){
                 browser.tabs.insertCSS({
                     file: './dark.css'
                 })
+                browser.storage.local.set({ [id]: true})
             }else{
                 browser.tabs.removeCSS({
                     file: './dark.css'
                 })
-            } 
-        }  
+                browser.storage.local.set({ [id]: false})
+            }
+        }
     }else{
         let txt = document.getElementById('detect')
         let box = document.getElementById('box')
