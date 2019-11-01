@@ -102,6 +102,12 @@ div.cell.selected, div.cell.selected.jupyter-soft-selected {
 div.output_area pre {
 	color: var(--secondary-color) !important;
 }
+div.output_stderr {
+	background: var(--secondary-bg-2);
+}
+div.out_prompt_overlay:hover {
+	background: none;
+}
 div.text_cell_render {
 	color: var(--secondary-color) !important;
 }
