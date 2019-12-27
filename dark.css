@@ -116,6 +116,9 @@ div.text_cell_render {
 code{
     background-color: var(--codeblock-md) !important;
 }
+.rendered_html pre, .rendered_html code {
+	background-color: #5c6370;
+}
 .CodeMirror{
     color: white !important;
 }
