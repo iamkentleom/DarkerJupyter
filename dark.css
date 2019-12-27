@@ -1,13 +1,13 @@
 :root{
-    --primary-bg: #2b2b2b;
-    --secondary-bg: #1e1e1e;
-    --secondary-bg-2: #383838;
-    --primary-color: #eeeeee;
-    --secondary-color: #d5d5d5;
-    --codeblock-md: #bbbbbb;
-    --selection: #49483e;
-    --border: 1px solid #000000;
-    --box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.2);
+    --primary-bg: #282c34;
+    --secondary-bg: #383e4a;
+    --secondary-bg-2: #21252b;
+    --primary-color: #abb2bf;
+    --secondary-color: #f8fafd;
+    --codeblock-md: #5c6370;
+    --selection: #d2e0ff2f;
+    --border: 1px solid #21252b;
+    --box-shadow: 0px 0px 12px 1px rgba(33, 37, 43, 0.2);
     --selected-cell: #42a5f5;
 }
 
@@ -77,7 +77,7 @@ span.save_widget span.filename:hover {
 
 /* notebook main */
 .input_area{
-    background-color: var(--secondary-bg) !important;
+    background-color: var(--primary-bg) !important;
     border: 0px !important;
 }
 .CodeMirror-gutter, .CodeMirror-linenumbers {
