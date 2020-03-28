@@ -78,7 +78,13 @@ span.save_widget span.filename:hover {
 /* notebook main */
 .input_area{
     background-color: var(--primary-bg) !important;
-    border: 0px !important;
+    border: 1px solid var(--secondary-bg) !important;
+}
+.input_area:focus-within{
+    border: 1px solid var(--primary-color) !important;
+}
+.CodeMirror-lines {
+	padding: 0.6em 0.6em;
 }
 .CodeMirror-gutter, .CodeMirror-linenumbers {
 	background-color: var(--secondary-bg);
@@ -102,8 +108,18 @@ div.cell.selected, div.cell.selected.jupyter-soft-selected {
 div.output_area pre {
 	color: var(--secondary-color) !important;
 }
+div.output_area img, div.output_area svg{
+    background-color: var(--secondary-color) !important;
+}
+div.output_area .rendered_html table{
+    background-color: var(--secondary-color) !important;
+}
 div.output_stderr {
 	background: var(--secondary-bg-2);
+}
+.rendered_html * + .alert{
+    background-color: var(--primary-bg) !important;
+    border: none;
 }
 div.out_prompt_overlay:hover {
 	background: none;
