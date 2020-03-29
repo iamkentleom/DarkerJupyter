@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Darker Jupyter",
   "description": "Dark Mode for Jupyter Notebooks",
-  "version": "2.0",
+  "version": "2.1",
   "author": "Kent Leo L. Makibulan",
   "icons": {"16": "images/icon16.png",
             "48": "images/icon48.png",
