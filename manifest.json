@@ -8,7 +8,7 @@
             "48": "images/icon48.png",
             "128": "images/icon128.png" },
   "offline_enabled": true,
-  "permissions": ["tabs", "http://*/notebooks/*", "https://hub.gke.mybinder.org/*", "storage"],
+  "permissions": ["tabs", "*://*/*.ipynb", "storage"],
   "background":{
     "scripts": ["storage-clear.js"]
   },
@@ -23,7 +23,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["http://*/notebooks/*", "https://hub.gke.mybinder.org/*"],
+      "matches": ["*://*/*.ipynb"],
       "css": ["dark.css"]
     }
   ]

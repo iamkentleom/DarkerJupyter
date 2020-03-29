@@ -1,4 +1,4 @@
-browser.tabs.query({active: true, url:["http://*/notebooks/*", "https://hub.gke.mybinder.org/*"]}, tab => {
+browser.tabs.query({active: true, url:["*://*/*.ipynb"]}, tab => {
     if(tab[0] !== undefined){
         let id = tab[0].id
 
