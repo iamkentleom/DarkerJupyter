@@ -134,6 +134,7 @@ code{
 }
 .rendered_html pre, .rendered_html code {
 	background-color: #5c6370;
+    padding: 0.4em;
 }
 .CodeMirror{
     color: white !important;
