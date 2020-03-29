@@ -15,6 +15,9 @@
 ::selection, .CodeMirror-selected{
     background: var(--selection) !important;
 }
+*{
+    scrollbar-color: var(--secondary-bg) var(--primary-bg);
+}
 
 /* cursor */
 .CodeMirror-cursor {
@@ -87,7 +90,8 @@ span.save_widget span.filename:hover {
 	padding: 0.6em 0.6em;
 }
 .CodeMirror-gutter, .CodeMirror-linenumbers {
-	background-color: var(--secondary-bg);
+    background-color: var(--secondary-bg);
+    padding-right: 1em;
 }
 .CodeMirror-gutters {
 	border-right: 1px solid var(--secondary-bg-2);
