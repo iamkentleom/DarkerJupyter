@@ -1,7 +1,7 @@
 <p align="center">
   <img src="images/icon128.png">
   <br/>
-  v2.2
+  v2.4.0
 </p>
 
 # Darker Jupyter
