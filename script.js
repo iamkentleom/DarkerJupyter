@@ -1,4 +1,4 @@
-browser.tabs.query({active: true, url:["*://*/*.ipynb"]}, tab => {
+browser.tabs.query({active: true, url:["*://*/*.ipynb", "*://*/tree", "*://*/terminals/*"]}, tab => {
     if(tab[0] !== undefined){
         let id = tab[0].id
 
@@ -35,4 +35,10 @@ browser.tabs.query({active: true, url:["*://*/*.ipynb"]}, tab => {
         box.style.display = 'none'
         txt.style.display = 'block'
     }
+    async function version(){
+        const res = await fetch('./manifest.json')
+        const data = await res.json()
+        document.getElementById('version').innerText = data.version
+    }
+    version()
 })

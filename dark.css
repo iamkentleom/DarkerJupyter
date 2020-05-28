@@ -187,6 +187,10 @@ code{
 .modal-header{
 	border-bottom: 1px solid var(--secondary-bg-2);
 }
+.modal-header > .close{
+    color: var(--secondary-color);
+    text-shadow: none;
+}
 .modal-footer {
 	border-top: 1px solid var(--secondary-bg-2);
 }
@@ -194,23 +198,86 @@ input[type="search"]{
     background-color: var(--secondary-bg-2) !important;
     color: var(--primary-color);
 }
-.typeahead-search-icon{
+.typeahead-search-icon, .typeahead__search-icon{
     filter: invert(100%);
 }
 button[type="submit"]{
     background-color: var(--secondary-bg-2);
 }
-.typeahead-container button:focus, .typeahead-container button:hover{
+button[type="submit"]:focus, button[type="submit"]:hover{
     background-color: var(--secondary-bg);
 }
-.typeahead-list{
+.typeahead-list, .typeahead__list{
     background-color: var(--primary-bg);
+    border: var(--border);
     color: var(--primary-color);
 }
-ul.typeahead-list > li > a{
+.typeahead__list > li{
+    border: none;
     color: var(--primary-color);
 }
-a[data-group="jupyter-notebook"]:hover{
+.typeahead__list > .typeahead__group:first-child{
+    border-top: none;
+}
+.typeahead__list > .typeahead__group > a{
+    background-color: var(--secondary-bg-2);
+}
+ul.typeahead-list > li > a, .typeahead__list > li > a{
+    color: var(--primary-color) !important;
+}
+a[data-group="jupyter-notebook"]:hover, .typeahead__list > li > a:hover{
     background-color: var(--secondary-bg) !important;
     color: var(--primary-color) !important;
+}
+
+/* startpage and terminal */
+#site{
+    background-color: var(--primary-bg);
+}
+.nav-tabs{
+    border-bottom: var(--border);
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+    background-color: var(--secondary-bg-2);
+    border: var(--border);
+    color: var(--primary-color);
+}
+.nav > li > a:hover, .nav > li > a:focus{
+    background-color: var(--secondary-bg);
+}
+.nav-tabs > li > a:hover{
+    border: 1px solid var(--secondary-bg);
+}
+.dynamic-instructions, .toolbar_info, .tab-pane{
+    color: var(--primary-color) !important;
+}
+.list_container, .panel{
+    margin-top: 4px;
+    margin-bottom: 20px;
+    border: var(--border);
+    border-radius: 2px;
+    box-shadow: var(--box-shadow);
+}
+.list_container > div:last-child {
+	border: none;
+	background: var(--primary-bg);
+}
+.list_header, .panel-heading{
+    background-color: var(--secondary-bg-2) !important;
+    border-bottom: var(--border) !important;
+}
+.list_item{
+    background-color: var(--primary-bg) !important;
+    border-bottom: var(--border) !important;
+    color: var(--primary-color) !important;
+}
+.list_item:hover{
+    background-color: var(--secondary-bg) !important;
+}
+a{
+    color: var(--secondary-color);
+}
+a:hover{
+    color: var(--primary-color);
+    text-decoration: underline;
 }

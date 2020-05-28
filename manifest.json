@@ -2,13 +2,13 @@
   "manifest_version": 2,
   "name": "Darker Jupyter",
   "description": "Dark Mode for Jupyter Notebooks",
-  "version": "2.2",
+  "version": "2.4.0",
   "author": "Kent Leo L. Makibulan",
   "icons": {"16": "images/icon16.png",
             "48": "images/icon48.png",
             "128": "images/icon128.png" },
   "offline_enabled": true,
-  "permissions": ["tabs", "*://*/*.ipynb", "storage"],
+  "permissions": ["tabs", "*://*/*.ipynb", "*://*/tree", "*://*/terminals/*", "storage"],
   "background":{
     "scripts": ["storage-clear.js"]
   },
@@ -23,8 +23,9 @@
   },
   "content_scripts": [
     {
-      "matches": ["*://*/*.ipynb"],
-      "css": ["dark.css"]
+      "matches": ["*://*/*.ipynb", "*://*/tree", "*://*/terminals/*"],
+      "css": ["dark.css"],
+      "run_at": "document_start"
     }
   ]
 }
