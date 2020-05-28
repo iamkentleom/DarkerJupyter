@@ -1,4 +1,4 @@
-browser.tabs.query({active: true, url:["*://*/*.ipynb", "*://*/tree", "*://*/terminals/*"]}, tab => {
+browser.tabs.query({active: true, url:["*://*/*.ipynb", "*://*/tree*", "*://*/terminals/*"]}, tab => {
     if(tab[0] !== undefined){
         let id = tab[0].id
 
