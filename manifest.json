@@ -2,14 +2,23 @@
   "manifest_version": 2,
   "name": "Darker Jupyter",
   "description": "Dark Mode for Jupyter Notebooks",
-  "version": "2.4.1",
+  "version": "2.4.2",
   "author": "Kent Leo L. Makibulan",
-  "icons": {"16": "images/icon16.png",
-            "48": "images/icon48.png",
-            "128": "images/icon128.png" },
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
   "offline_enabled": true,
-  "permissions": ["tabs", "*://*/*.ipynb", "*://*/*.ipynb?*", "*://*/tree*", "*://*/terminals/*", "storage"],
-  "background":{
+  "permissions": [
+    "tabs",
+    "*://*/*.ipynb",
+    "*://*/*.ipynb?*",
+    "*://*/tree*",
+    "*://*/terminals/*",
+    "storage"
+  ],
+  "background": {
     "scripts": ["storage-clear.js"]
   },
   "browser_action": {
@@ -23,7 +32,12 @@
   },
   "content_scripts": [
     {
-      "matches": ["*://*/*.ipynb", "*://*/*.ipynb?*", "*://*/tree*", "*://*/terminals/*"],
+      "matches": [
+        "*://*/*.ipynb",
+        "*://*/*.ipynb?*",
+        "*://*/tree*",
+        "*://*/terminals/*"
+      ],
       "css": ["dark.css"],
       "run_at": "document_start"
     }
